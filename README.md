@@ -40,6 +40,13 @@
         var onloadCallback = function() {
             grecaptcha1 = grecaptcha.render(document.getElementById('grecaptcha1'), {
                 'sitekey' : 'PUBLIC_KEY'
+                // Так же сюда можно передать дополнительные параметры, например:
+                'theme' : 'dark', //default - light
+                'type' : 'audio', //default - image
+                'size' : 'compact', //default - normal
+                'tabindex' : 1, //default - 0
+                'callback' : , //function on success
+                'expired-callback' : //function when response expires
             });
             grecaptcha2 = grecaptcha.render(document.getElementById('grecaptcha2'), {
                 'sitekey' : 'PUBLIC_KEY'
