@@ -64,12 +64,12 @@
     <form class="fruitForm">
         <span class="fruitModal-close"><i class="fa fa-times"></i></span>
         <!-- Hidden settings -->
-        <input type="hidden" name="project_name" value="ООО АСТ-М">
-        <input type="hidden" name="admin_email" value="td-ast@mail.ru">
+        <input type="hidden" name="project_name" value="Alex Arahort Portal">
+        <input type="hidden" name="admin_email" value="alex@arahort.pro">
         <input type="hidden" name="form_subject" value="Форма обратной связи">
         <!-- END Hidden settings -->
         <fieldset>
-            <legend class="legend">Заказать звонок</legend>
+            <legend class="legend">Обратный звонок</legend>
             <div class="input">
                 <input name="Имя" type="text" placeholder="Имя*" required  />
                 <span><i class="fa fa-user"></i></span>
