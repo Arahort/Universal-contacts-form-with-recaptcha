@@ -1,0 +1,195 @@
+/*Form styles*/
+.fruitForm fieldset {
+  border: 1px solid #eb4947;
+}
+.fruitForm .legend {
+  position: relative;
+  width: 100%;
+  display: block;
+  background: #eb4947;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.fruitForm .input {
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+}
+.fruitForm .input span {
+  position: absolute;
+  display: block;
+  color: #d4d4d4;
+  left: 10px;
+  top: 8px;
+  font-size: 20px;
+}
+.fruitForm .input textarea {
+  width: 100%;
+  padding: 10px 5px 10px 40px;
+  display: block;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  color: #a1a1a1;
+}
+.fruitForm .input textarea:focus {
+  padding: 10px 5px 10px 10px;
+  outline: 0;
+  border-color: #eb4947;
+}
+.fruitForm .input input {
+  width: 100%;
+  padding: 10px 5px 10px 40px;
+  display: block;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  color: #a1a1a1;
+}
+.fruitForm .input input:focus {
+  padding: 10px 5px 10px 10px;
+  outline: 0;
+  border-color: #eb4947;
+}
+.fruitForm .submit {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto -30px auto;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #eb4947;
+  color: #eb4947;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 0 7px #fff;
+  transition: 0.2s ease-out;
+}
+.fruitForm .submit:hover,
+.fruitForm .submit:focus {
+  background: #eb4947;
+  color: #fff;
+  outline: 0;
+}
+.fruitForm .fruitSuccess {
+  /*position: absolute;
+    bottom: -90px;*/
+  bottom: -30px !important;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #2ecc71;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  display: none;
+  opacity: 0;
+}
+.fruitForm .fruitSuccess:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(46, 204, 113, 0);
+  border-bottom-color: #2ecc71;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.fruitModal .fruitForm {
+  position: relative;
+  top: 30%;
+  width: 335px;
+  display: table;
+  margin: -150px auto 0 auto;
+  background: #fff;
+  border-radius: 4px;
+}
+.fruitModal .fruitForm fieldset {
+  border: none;
+}
+.fruitModal .fruitForm .input input {
+  /*width: 80%;*/
+}
+.fruitModal .fruitForm .input textarea {
+  /*width: 80%;*/
+  min-height: 100px;
+  resize: none;
+}
+.fruitModal .fruitForm .fruitSuccess {
+  position: absolute;
+  bottom: -165px !important;
+}
+/*Modal styles*/
+.fruitModal {
+  background: #fff;
+  display: none;
+  left: 50%;
+  margin: -250px 0 0 -40%;
+  position: absolute;
+  top: -50%;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.fruitModal:target {
+  display: block;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background: rgba(53, 53, 53, 0.75);
+  z-index: 999999;
+}
+.fruitModal header,
+.fruitModal footer {
+  background: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+.fruitModal footer {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+.fruitModal section,
+.fruitModal header,
+.fruitModal footer {
+  padding: 15px;
+  z-index: 200;
+}
+.fruitModal-close {
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin-left: 320px;
+  margin-top: -15px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 25px;
+  color: #eb4947;
+  cursor: pointer;
+  z-index: 9999;
+}
