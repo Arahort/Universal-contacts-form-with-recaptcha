@@ -54,7 +54,7 @@
     <script src="/QupeForm/js/QupeForm.js" type="text/javascript"></script>
 </head>
 ```
-**[⬆ наверх](#Содержание)**
+
 ---
 
 ## HTML
@@ -133,7 +133,6 @@ var onloadCallback = function() {
 
 >  **onclick:** Цели Яндекс.Метрики, GA итд, замените XXXX на свой ID и название цели.
 
-**[⬆ наверх](#Содержание)**
 ---
 
 ## CSS
@@ -146,7 +145,6 @@ var onloadCallback = function() {
 
 <p>Позволяет быстро менять цвет формы под цвет сайта</p>
 
-**[⬆ наверх](#Содержание)**
 ---
 
 ## JavaScript
@@ -159,7 +157,6 @@ url: "/QupeForm/mail.php",
 
 <p>Убедитесь что путь к файлу-обработчику указан верно.</p>
 
-**[⬆ наверх](#Содержание)**
 ---
 
 ## PHP
@@ -172,7 +169,6 @@ const GOOGLE_RECAPTCHA_PRIVATE_KEY = 'SECRET_KEY';
 
 <p>Все остальные дополнительные параметры расписаны в самом файле-обработчике.</p>
 
-**[⬆ наверх](#Содержание)**
 ---
 
 ## Автор
@@ -180,4 +176,6 @@ const GOOGLE_RECAPTCHA_PRIVATE_KEY = 'SECRET_KEY';
 **[Alex Arahort](https://arahort.pro/)**
 
 ---
+
+**[⬆ наверх](#Содержание)**
 
