@@ -64,9 +64,23 @@ if (isset($_POST['g-recaptcha-response'])) {
             "Content-Type: text/html; charset=utf-8" . PHP_EOL .
             'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL . //заменить "$admin_email" на "$fromEmail" если нужно указать другой емейл для отправки писем
             'Reply-To: '.$admin_email.'' . PHP_EOL;
+
+        /*Save log*/
+        $file = 'log.txt';
+        $date = $date = date("h:i:s | d.m.Y");
+        $text = PHP_EOL . $form_subject . PHP_EOL . $date . PHP_EOL . '=======================' . PHP_EOL;
+        $text .= PHP_EOL . strip_tags ($message) . PHP_EOL;
+        $fOpen = fopen($file,'a');
+        fwrite($fOpen, $text);
+        fclose($fOpen);
+
+        /*Send mail*/
         mail($admin_email, adopt($form_subject), $message, $headers );
+
+        /*If user have email*/
         if(isset($_POST['Email'])){ // Дублирование письмо клиенту, если он указал емейл
             $message = '<p>Вы оставили заявку на сайте SITE_NAME. Наши менеджеры свяжутся с вами в ближайшее время.</p><p>Данные, которые вы оставили:</p>' . $message . '<p>С уважением, компания "SITE_COMPANY"</p>';
+            /*Send mail*/
             mail($_POST['Email'], adopt($form_subject), $message, $headers );
         }
     }
