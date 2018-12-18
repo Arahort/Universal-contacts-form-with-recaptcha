@@ -38,8 +38,10 @@ jQuery(function($){
 	});
     /*Form Modal*/
     $(".fruitModal-close").click(function() {
+        var scrollV = $(document).scrollTop();
         window.location.hash = '';
         history.pushState("", document.title, window.location.pathname);
+        $(document).scrollTop(scrollV);
     });
 });
 
